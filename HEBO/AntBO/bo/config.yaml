@@ -15,6 +15,6 @@ search_strategy: 'local' # local (CASMO), 'batch_local' (CASMO with NSGA con), '
 
 bbox:
   tool: Absolut
-  path: './Absolut' # Put path to Absolut (/ABS/PATH/TO/Absolut/)
+  path: '/mnt/c/Users/Ejer/Desktop/dtuBScProject/Absolut' # Put path to Absolut (/ABS/PATH/TO/Absolut/)
   process: 2    # Number of cores
   startTask: 0  # start core id

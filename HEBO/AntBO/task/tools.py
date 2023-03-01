@@ -44,7 +44,7 @@ class Absolut(BaseTool):
 
         # Change working directory
         current_dir = os.getcwd()
-        os.chdir('/mnt/c/Users/Ejer/OneDrive - Danmarks Tekniske Universitet/Dokumenter/DTU/6.semester/Bachelor Project/Absolut')
+        os.chdir(f"{self.config['path']}")
 
         sequences = []
         with open(f"TempCDR3_{self.config['antigen']}.txt", "w") as f:
