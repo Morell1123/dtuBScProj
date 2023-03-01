@@ -1,0 +1,449 @@
+1	YYRLYPREFKSFCQ							
+2	YSVAKTQGQYCSKE							
+3	WYRSQSKNLKENCT							
+4	WWHYHGYCFGLSCV							
+5	WTQKHPRWYICHAE							
+6	WTGYQMHLDGKKPF							
+7	WSQPKLIKKNSVTQ							
+8	WSGKQGYCYSCAIE							
+9	WNFNPVFRGTHGEI							
+10	WMRYEEAPRLSPLR							
+11	WLIWPSKIHKYSMP							
+12	WFQQFGIMESCLFY							
+13	WCFMQMLMRYETTG							
+14	VWSFPAWRQKANSA							
+15	VQAAQEHGLDDCGH							
+16	VQAACGDLHVCEIA							
+17	VMDIRYQYQSAGAT							
+18	VLFYITIPNKKTQF							
+19	VISLPKGPGCIMSC							
+20	VGRAVGHVIYDDNK							
+21	VFACALTSTVDEVP							
+22	VANMFPFHQRIVYT							
+23	TLGHIALVIRGRVS							
+24	TKQSPTVGTWTLTI							
+25	TACGHVVDLCCEET							
+26	SYRIVSWMRTCDWT							
+27	SWAPPQHCVVWLGN							
+28	SKSMIQNVDCHKGY							
+29	SFFATWTESQCVMS							
+30	SDSGYEYMNSKPVM							
+31	SANISRSCTSNDNS							
+32	SAINQHQIQAKKHP							
+33	RYFIPVKRNWSMTD							
+34	RTCMIEKQNQFYMP							
+35	RSPPIGSWALHRMQ							
+36	RPKLDGTCWQDEFK							
+37	RPHWGIQIQYEQEV							
+38	RLKSVCRGLMFEDT							
+39	QYGYDMRMGWESYA							
+40	QVRIHHDHKVQDVV							
+41	QRSDDESEPHAASL							
+42	QLYKHTEVFQCRYS							
+43	QKYHSQEYCHRCNN							
+44	QGVLMCIDSWYAGF							
+45	QGRGSNLWRHVESI							
+46	QGKMFGMPHCTGDL							
+47	QDVESAVLALCPTL							
+48	QCVIKAKKKPHMHL							
+49	QCNEQMTGRGLHIV							
+50	PSTAEAKYFNPCTY							
+51	PRDDDTRQFHNFAM							
+52	PKGGCVTWPNRHFH							
+53	PDMHRPGQAKSEKK							
+54	PDHYLSPDRFFNAE							
+55	PDANVHKWNKYEGS							
+56	PCEGMMSCSGCDGM							
+57	PANRTKAEQDAVVL							
+58	NVYEAPFQVISDRI							
+59	NQSRLQHRIHSHIQ							
+60	NLDEQVIGIPCAKA							
+61	NEPWQSPTMMFIIC							
+62	NATDIYKFYSHRKV							
+63	MMHKIKEYTNLQLP							
+64	MKRPYWFAVKAMAR							
+65	MECQSTVLIAAFRD							
+66	LSNMRQTRTGNVRP							
+67	LDRPGELPCYITWV							
+68	LATSTRATSLLKMH							
+69	LARGKNSDVFNHCN							
+70	KTCTLPSGAVCTRR							
+71	KSPLACKWEDYFKH							
+72	KMRQDFQLYSEDQW							
+73	KKIEDYITSSTLRH							
+74	KIYYCMGRSQDGHG							
+75	KIQQSSYGDFQFSV							
+76	KIPETWCSVNVMMP							
+77	KHWEHQWIRDYPKF							
+78	KHTEAAGKQVYMRH							
+79	KGVTKRGCVHLGTY							
+80	KDMVCKMTKMANFH							
+81	KDDAHHGLGNHEAY							
+82	IVTKMTWIFQKVNQ							
+83	ITMDGTSCCKSGYT							
+84	ITGYTMKAGVWFMI							
+85	ISRIAALWKEFVLM							
+86	INRNTEQHGGNPWH							
+87	IGKCHDNCNRGGWA							
+88	HRGLNKYELRFKRN							
+89	HPWPVIMWCASELL							
+90	HPPEYKYQLHYEMI							
+91	HNKMQATMGYNLYM							
+92	HMWSQCCVQRMSPS							
+93	HKYYYIDEMQLWIM							
+94	HFGVLDNPSVHWPI							
+95	HCGPYTYRDGKGMA							
+96	GWNDMSSCYAIMQL							
+97	GWFAIWLNRTTETL							
+98	GVSIRTGIFEKIAD							
+99	GTFNDELKQRFKFI							
+100	GQPFWRPPRFRDKD							
+101	GCEMERRGSKYASQ							
+102	GAIYPDQTISADPF							
+103	GAHFMDEFSVKMPL							
+104	FYYATCDLFNTPFM							
+105	FVHDSCCISLPGFC							
+106	FMVKNNQCWGFPSH							
+107	FKTQQCDIMNWEEL							
+108	FKPHRAIVVFWSHH							
+109	FIAKYSVRLVAHTT							
+110	FEYLLDPSRRWVFS							
+111	FAYQPACIMETCPN							
+112	FASVDNMPLVPHIE							
+113	EYWDWEWNISCAQG							
+114	EYLQHAMMVPGPDH							
+115	ETLWDHIEQGLEEF							
+116	ETHADELCTNKGMS							
+117	ETETQCCTVSYHTC							
+118	ESWHFISEATWMQK							
+119	EMCYGRQGRRSFST							
+120	EINDQEQCMLPHNE							
+121	EHWYGGIMPMRGFD							
+122	EDVHFFPWHMANGI							
+123	ECNQYANSPISTKI							
+124	EAVGVLLVCSWVLW							
+125	DVPQGVNNEANFKS							
+126	DMRWSAGIDIEVWC							
+127	DMMCMNVDCGRRMH							
+128	DHYWPNLDHERVMA							
+129	DDYFLEHYILFLKN							
+130	DCEYGPGMKDDFMK							
+131	CYACNGAWEVARKV							
+132	CNMVTIRFDPMTMG							
+133	CIKNFNVPIWYPQP							
+134	CGISNAIQNQDSNF							
+135	CGFIHKSLRIDQQP							
+136	CEIMTKKAKCHFAL							
+137	CDTMGDLPRWMVMH							
+138	ATVFDENRTSGFEI							
+139	ATKHECQTGPEGLW							
+140	ANNRESCSIEIYRT							
+141	AKVDHKWARSSRQN							
+142	AKLYSLGTYQYSHV							
+143	AIGTYVVIYCTLNP							
+144	AHMWPPFHGQMQRP							
+145	AFTQDSVVPQEMED							
+146	AEPRILPHTMYQWG							
+147	AEGHDQGNCCIVWA							
+148	ADLNPEWLMPWCER							
+149	ACLYNQEKTVFWRH							
+150	ACCRTVPTYHWPQG							
+151	YNIDHPRWKDACDR							
+152	YFLLTWGFMNESWT							
+153	WWAIQLGAQYHPLC							
+154	WQPYSCIKVMVANF							
+155	WMSHWAYLGSWMME							
+156	WDVPANKAWRANRP							
+157	WDLHRMFKPCGLQL							
+158	WDLFMWNEKNIPLK							
+159	WCIRNMTWTFYCTE							
+160	VWQKIWGSVLTSQT							
+161	VVQPKLNHAEWYRI							
+162	VQVCFGSGTQAHVC							
+163	VMNWMMWPIHPTKC							
+164	VLVRTMYADENTIM							
+165	VIEYHKDRRIIFTE							
+166	VGVQEFNEKLQFVY							
+167	VATPKLFPAYYSTE							
+168	VAMHLYKNCRYIQH							
+169	TYDNSIVGFAHNCY							
+170	TLEMIRWHPCFYWH							
+171	SWLEKWIWGGQPPV							
+172	SQHSFMFYFWIGFR							
+173	SLAYKIRCMDMVHI							
+174	SIVPMWKGRINRKS							
+175	SILIAKSAITMPSN							
+176	SFNGYRGANWEHFY							
+177	SAFMENFYPEECVW							
+178	RTDWQWIKGLVSWY							
+179	RSYDYIHEFDATVL							
+180	RSIVDCVQELIDPH							
+181	RQVYMKGWLTCDHW							
+182	RPPFQYFYGGKPSC							
+183	RIAAWFWSKEHDNK							
+184	RIDMSWWPNGHLMD							
+185	QSTPHPKEWEAQNW							
+186	QMDPVPDWWSEFND							
+187	QIDKNKACYREEWH							
+188	QEDHSCYFKFNALG							
+189	PYKYDQHRNECTWQ							
+190	PYGFPLNLPVDAES							
+191	PVWHEILFAGVMIQ							
+192	PLVENVCFIFIHQR							
+193	PCKVWYNIYYFLGH							
+194	PCCIGEPHQPMQCH							
+195	NTLGKDFSQERTCM							
+196	NSLDSSLPGDCMNG							
+197	NSKHTWARIHVASR							
+198	NMVRNHYGALKCVA							
+199	NEREMEREVDWVYV							
+200	NDALVVPWHMNPCM							
+201	NCHFCCYNCSQSCL							
+202	NACITRCGGPTNPA							
+203	MTFNQRCYSWWVPF							
+204	MRQHDFNTLCDENT							
+205	MHPGCMNSEHACWR							
+206	MHLTCTDEWSPHSW							
+207	LHNLSPSIMISIAC							
+208	LHILMMHDGAWEAN							
+209	LFSPEVVVESKWHM							
+210	KWGRNPTGQHCTSA							
+211	KSKEAVWGEEVILY							
+212	KQWFLWDLSRQLNR							
+213	KMCKENHNWIAMYH							
+214	KMAYHLNSLGGSLK							
+215	ITNLAQEVHCSTTG							
+216	IRVQCAPLPGMLQM							
+217	IMDCNHTLCDLDPL							
+218	IISNVSTHLQYSRA							
+219	ICSSVIERQLGTYS							
+220	HYMYNMSYKGVGGF							
+221	HWMGMGQIVPRWNC							
+222	HVNNATQEPGLHMN							
+223	HTNFHGVRKAAKYK							
+224	HSCITMLGGQWQVP							
+225	HNTDHHFYDGQKNP							
+226	HGFIFIVDEIPVPR							
+227	HDFCANINESNHQA							
+228	HAMFTTRDMENRRH							
+229	GHPEQKKIYNRNKF							
+230	GHLKLPGTMQAIRF							
+231	FYGQWKGLNIFNEI							
+232	FKHYHDIPVRSFSN							
+233	FEQSVEDDMYTLRE							
+234	FEFTSNQNIPMGAC							
+235	EVVEHNGTRNIYMH							
+236	ERISAQMEPMFLRF							
+237	ENQPIAMAFHASNM							
+238	DRPEGIMEHNNPWR							
+239	DPEADDNMHYCNCR							
+240	DAMPIMNDCTNPDC							
+241	CVSHKYACVSSWMD							
+242	CVLQLEQHYPWHKN							
+243	CRLREQQQKPREPT							
+244	CQDQCDSDDDQIRR							
+245	AYFTRVVGEGVCVR							
+246	ARCKGNYVMDNNMI							
+247	AHCATCWLARYPAR							
+248	AHAWAKKNEGEIVQ							
+249	ADMPTRWFHPITMR							
+250	ACNAVYEEHKTKIG							
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								

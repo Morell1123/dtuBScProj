@@ -1,0 +1,55 @@
+# How to use Absolut! Specifically on a WSL on windows
+#Installation
+Go to the github og Absolute and follow the Linux installation for the full Absolute version which can be found in the ReadMe
+You will need to install a c++ compiler. I used the instructions from this youtube video: https://www.youtube.com/watch?v=c7FjV8Gwk_M
+
+
+#Simulate antibodyCDR3H to antigen binding affinities from sequences alone
+
+#Step 1: Discretize the antigen
+Navigate to (base) morell_linux@DESKTOP-COFG7T5:/mnt/c/Users/Ejer/OneDrive - Danmarks Tekniske Universitet/Dokumenter/DTU/6.semester/Bachelor Project/Absolut/src/bin$     
+	The easiest way to navigate there is to open a pyhcarm project on the absolute folder and use the terminal there since it is already set up to linux)
+Use command: ./Absolut discretize [PDB id] [Chains] [res] [type af lattice]
+For example: ./Absolut discretize 1CZ8 VW 5.25 FuC
+
+#Step 2: Add the newly discretized antigen to the Absolut anigen library
+After discretization a window open with an GIU of the discretization with all the results.
+In the "Multi-Chain structure" pane, you will find the code that needs to be added to the list of antigens in the AntigenLib.cpp (This is a c++ file, your standard python IDE  will probably not be able to open it. Find a way to open it. I used the VS IDe for c++ to open it)
+Beware to add it under the single or multichain department correctly for you to keep order. In the 7 min introduction video there are instrcutions on where to add it based on the number of loops which you should watch.
+For example: add this for the 1IQ9 antigen (three finger toxin)
+    // ------------ Oliver's added Antibodies --------------------------------
+    if (codeID == str2int("1IQ9_A")){
+        agStruct = string("SURLDURDRRLDSSRSUDDSDRLUSRSLDRDRLDSRUSLDLSSDSULLUSDURLDRDRLL");
+        agSeq = string("LECHNQQSSQPPTTKTCPGETNCYKKVWRDHRGTIIERGCGCPTVKPGIKLNCCTTDKCNN");
+        startPos = 133152;
+        blockV = { 141409 };
+    }
+
+Once it has been added, run the following 3 commands to recomplie/update Absolute with your new addition
+cd src/bin
+rm Absolut
+make
+
+
+#Step 3: Simulate your first binding affinity
+
+
+
+
+
+
+#Errors and troubleshooting:
+#I could not use the discretize command because it involved opening a GUI which a could not, probably because i was using WSL and the instruction assumes you use linux normally and that GUI's are set up already
+#I got something similar the following eror message when i tried to run "./Absolute discretize XXXX". The only difference was that there were multiple available platform plugins and not just xcb
+"
+qt.qpa.xcb: could not connect to display :0
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "/home/xq/.pyenv/versions/mp/lib/python3.7/site-packages/cv2/qt/plugins" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: xcb.
+
+zsh: abort      python ~/ttt.py
+"
+#However by a stroke of luck I simply followed the following youtube video for installing a simply text editor GUI https://www.youtube.com/watch?v=BeVfC3ylnyI
+#After installing gedit I tried to run the discretitize function again and it simply worked, and opened the discretize application as it should, probably using gedit.
+
