@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(add_help=True, description='Script to plot convergence curves for all methods')
     parser.add_argument('--config', type=str,
-                        default='./visualise_results/convergence_curve_config.yaml',
+                        default='/mnt/c/Users/Ejer/Desktop/dtuBScProject/HEBO/AntBO/visualise_results/convergence_curve_config.yaml',
                         help='Path to configuration File')
     args = parser.parse_args()
 
@@ -119,6 +119,8 @@ if __name__ == '__main__':
                 ax.plot(list(range(0, f_evals)), np.mean(binding_energy, axis=0)[:f_evals],
                         color=config['methods'][method]['line_color'],
                         label=config['methods'][method]['label'])
+                fig.suptitle('Main title')
+                plt.show()
                 ax.fill_between(list(range(0, f_evals)),
                                 np.mean(binding_energy, axis=0)[:f_evals] - config['num_std'] * np.std(binding_energy,
                                                                                                        axis=0)[
@@ -134,7 +136,7 @@ if __name__ == '__main__':
     y_bbox = - 0.02 + n_bbox * 0.014
     lgd = fig.legend(handles, labels, bbox_to_anchor=[0.5, y_bbox], loc='upper center', fancybox=True, shadow=True,
                      ncol=n_col_legend, fontsize=15)
-    fig.tight_layout(rect=(0., .10, 1, .1))
+    #fig.tight_layout(rect=(0., .10, 1, .1))
     os.makedirs(config['save_dir'], exist_ok=True)
     save_path = os.path.join(config['save_dir'], "binding_energy_vs_funct_evals.pdf")
     plt.savefig(save_path, bbox_extra_artists=(lgd,), pad_inches=0.1, bbox_inches='tight')
