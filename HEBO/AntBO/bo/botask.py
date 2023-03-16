@@ -35,6 +35,7 @@ class BOTask(TestFunction):
         x: categorical vector
         '''
         energy, _ = self.fbox.Energy(x)
+        print('test9')
         energy = torch.tensor(energy, dtype=torch.float32).to(self.device)
         return energy
 

@@ -179,7 +179,6 @@ class BOExperiments:
             'seed': self.seed,
             'search_strategy': self.search_strategy
         }
-
         if self.config['resume']:
             optim = self.load()
         else:
@@ -197,7 +196,6 @@ class BOExperiments:
                               alphabet_size=self.nm_AAs,
                               **kwargs
                               )
-
         for itern in range(self.start_itern, self.config['max_iters']):
             start = time.time()
             x_next = optim.suggest(self.config['batch_size'])

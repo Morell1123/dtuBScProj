@@ -1,5 +1,5 @@
 antigens:
-  - 1IQ9_A
+  - 1CTX_A
 methods:
   BO_ssk:
     kernel_name: ssk
@@ -31,6 +31,6 @@ random_seeds:
 - 44
 - 45
 - 46
-results_dir: './results/'  # Put path where you fetch the results '/ABS/PATH/TO/results/'
+results_dir: './results/transformed_overlap_batch_size_10'  # Put path where you fetch the results '/ABS/PATH/TO/results/'
 save_dir: './plots/'  # Put path where plots should be saved /ABS/PATH/TO/plots
 sequence_length: 11

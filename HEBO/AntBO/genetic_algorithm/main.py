@@ -23,8 +23,13 @@ from utilities.config_utils import save_config
 
 
 def summarisation(res, save_dir, num_funct_evals, convergence_curve=True):
+
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
+    if os.path.exists(save_dir):
+        print(save_dir)
+        raise AssertionError("path does not exist")
+    print(os.getcwd())
     res.to_csv(os.path.join(save_dir, 'results.csv'))
 
     if convergence_curve == True:

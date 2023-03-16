@@ -29,7 +29,7 @@ class Absolut(BaseTool):
             assert key in config, f"\"{key}\" is not defined in config"
         self.config = config
         assert self.config['startTask'] >= 0 and (self.config['startTask'] + self.config['process'] < os.cpu_count()), \
-            f"{self.config['startTask']} is not a valid cpu"
+            f"{self.config['startTask']} is not a valid cpu, os.cpu_count = {os.cpu_count()}"
 
     def Energy(self, x):
         '''
@@ -53,7 +53,6 @@ class Absolut(BaseTool):
                 line = f"{i + 1}\t{seq2char}\n"
                 f.write(line)
                 sequences.append(seq2char)
-
         _ = subprocess.run(
             ['taskset', '-c', f"{self.config['startTask']}-{self.config['startTask'] + self.config['process']}",
              "./src/bin/Absolut", 'repertoire', self.config['antigen'], f"TempCDR3_{self.config['antigen']}.txt",

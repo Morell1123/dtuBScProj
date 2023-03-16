@@ -448,6 +448,7 @@ class CASMOPOLITANCat:
                         del bert
                         y_next = gp(x_next_reprsn).mean.detach()
                     else:
+                        #x_next.to('cpu') #Oliver Addition
                         y_next = gp(x_next).mean.detach()
                     with gpytorch.settings.max_cholesky_size(self.max_cholesky_size):
                         X_torch = torch.cat((X_torch, x_next), dim=0)
