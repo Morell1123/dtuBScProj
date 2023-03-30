@@ -44,6 +44,11 @@ class Absolut(BaseTool):
 
         # Change working directory
         current_dir = os.getcwd()
+        # print(current_dir)
+        # pardir1 = os.path.abspath(os.path.join(current_dir, os.pardir))
+        # proj_dir = os.path.abspath(os.path.join(pardir1, os.pardir))
+        # absolut_dir = os.path.join(proj_dir,f"{self.config['path']}")
+        # os.chdir(absolut_dir)
         os.chdir(f"{self.config['path']}")
 
         sequences = []
@@ -53,12 +58,12 @@ class Absolut(BaseTool):
                 line = f"{i + 1}\t{seq2char}\n"
                 f.write(line)
                 sequences.append(seq2char)
-        _ = subprocess.run(
-            ['taskset', '-c', f"{self.config['startTask']}-{self.config['startTask'] + self.config['process']}",
-             "./src/bin/Absolut", 'repertoire', self.config['antigen'], f"TempCDR3_{self.config['antigen']}.txt",
-             str(self.config['process'])], capture_output=True, text=False)
+        absolut_process_report = subprocess.run(
+            ["./Absolut", 'repertoire', self.config['antigen'], f"TempCDR3_{self.config['antigen']}.txt"], capture_output=True, text=False)
 
-        data = pd.read_csv(os.path.join(self.config['path'],
+        assert len(absolut_process_report.stderr) == 0, 'Absolut process was not run correctly. error message:' + str(absolut_process_report.stderr)
+        #print(f"{absolut_process_report}")
+        data = pd.read_csv(os.path.join(f"{self.config['path']}",
                                         f"{self.config['antigen']}FinalBindings_Process_1_Of_1.txt"),
                            sep='\t', skiprows=1)
 
@@ -68,8 +73,8 @@ class Absolut(BaseTool):
         min_energy = energy['Energy'].values
 
         # Remove all created files and change the working directory to what it was
-        for i in range(self.config['process']):
-            os.remove(f"TempBindingsFor{self.config['antigen']}_t{i}_Part1_of_1.txt")
+        #for i in range(self.config['process']):
+        #    os.remove(f"TempBindingsFor{self.config['antigen']}_t{i}_Part1_of_1.txt")
         os.remove(f"TempCDR3_{self.config['antigen']}.txt")
 
         os.remove(f"{self.config['antigen']}FinalBindings_Process_1_Of_1.txt")

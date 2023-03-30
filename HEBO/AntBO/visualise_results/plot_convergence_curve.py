@@ -138,7 +138,7 @@ if __name__ == '__main__':
                      ncol=n_col_legend, fontsize=15)
     #fig.tight_layout(rect=(0., .10, 1, .1))
     os.makedirs(config['save_dir'], exist_ok=True)
-    save_path = os.path.join(config['save_dir'], "binding_energy_vs_funct_evals.pdf")
+    save_path = os.path.join(config['save_dir'], "binding_energy_vs_funct_evals_1CTX_500.pdf")
     plt.savefig(save_path, bbox_extra_artists=(lgd,), pad_inches=0.1, bbox_inches='tight')
     print(f'Saved {os.path.abspath(save_path)}')
     plt.close()

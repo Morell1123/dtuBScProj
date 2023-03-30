@@ -1,13 +1,13 @@
 acq: ei
 ard: True
 n_init: 20
-max_iters: 200
+max_iters: 7
 min_cuda: 10
 device: 'cpu'
 seq_len: 11
 normalise: True
-batch_size: 1
-save_path: './results/transformed_overlap'  # Put path where you want results to be stored '/ABS/PATH/TO/results/'
+batch_size: 30
+save_path: './results/HPCtest'  # Put path where you want results to be stored '/ABS/PATH/TO/results/'
 kernel_type: 'transformed_overlap'
 noise_variance: 1e-6
 resume: ???
@@ -15,6 +15,6 @@ search_strategy: 'local' # local (CASMO), 'batch_local' (CASMO with NSGA con), '
 
 bbox:
   tool: Absolut
-  path: '/content/drive/MyDrive/dtuBScProject/Absolut' #'/mnt/c/Users/Ejer/Desktop/dtuBScProject/Absolut' # Put path to Absolut (/ABS/PATH/TO/Absolut/)
+  path: '/mnt/c/Users/Ejer/Desktop/dtuBScProject/Absolut/src/bin' #'/zhome/92/7/155706/Desktop/dtuBScProject/Absolut' # Put path to Absolut on HPC drive (/ABS/PATH/TO/Absolut/)
   process: 1    # Number of cores
   startTask: 0  # start core id

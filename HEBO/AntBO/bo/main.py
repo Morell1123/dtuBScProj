@@ -17,6 +17,17 @@ import pandas as pd
 import numpy as np
 from bo.utils import save_w_pickle, load_w_pickle
 import argparse
+import time
+
+#HPC info Oliver addition
+if torch.cuda.is_available():
+	compute_hardware = f'(GPU)'
+else:
+    n = 1
+    if  os.environ.get('LSB_DJOB_NUMPROC'):
+        n = os.environ.get('LSB_DJOB_NUMPROC')
+    compute_hardware = f'(CPU, num_threads: {n})'
+start_time = time.time()
 
 SEARCH_STRATEGIES: Set[str] = {'glocal', 'local', 'local-no-hamming', 'batch_local', 'global'}
 
@@ -88,11 +99,13 @@ class BOExperiments:
 
     @staticmethod
     def get_path(save_path: str, antigen: str, kernel_type: str, seed: int, cdr_constraints: int, seq_len: int,
-                 search_strategy: str,
+                 search_strategy: str, batch_size, max_iters,
                  custom_init_dataset_path: Optional[str] = None):
-        path: str = f"{save_path}/BO_{kernel_type}/antigen_{antigen}" \
-                    f"_kernel_{kernel_type}_search-strat_{search_strategy}_seed_{seed}" \
-                    f"_cdr_constraint_{bool(cdr_constraints)}_seqlen_{seq_len}"
+        path: str = f"{save_path}/BO_{antigen}/antigen_{antigen}" \
+                    f"_batch_size_{batch_size}_" \
+                    f"_experiments_{max_iters*batch_size}_" \
+                    f"_seed_{seed}" \
+                    f"_seqlen_{seq_len}"
         if custom_init_dataset_path:
             custom_init_id = os.path.basename(os.path.dirname(custom_init_dataset_path))
             custom_init_id_seed = os.path.basename(os.path.dirname(os.path.dirname(custom_init_dataset_path)))
@@ -106,6 +119,8 @@ class BOExperiments:
             antigen=self.config['bbox']['antigen'],
             kernel_type=self.config['kernel_type'],
             search_strategy=self.config['search_strategy'],
+            batch_size = self.config['batch_size'],
+            max_iters=self.config['max_iters'],
             seed=self.seed,
             cdr_constraints=self.cdr_constraints,
             seq_len=self.config['seq_len'],
@@ -170,6 +185,7 @@ class BOExperiments:
                                            self.f_obj.idx_to_seq(x)[idx], x_best]
 
     def run(self):
+        start_time_run = time.time()
         np.random.seed(self.seed)
         torch.manual_seed(self.seed)
 
@@ -208,9 +224,12 @@ class BOExperiments:
             optim.observe(x_next, y_next)
             end = time.time()
             self.results(optim, x_next, itern, rtime=end - start)
-            if itern % 5 == 0:
+            if itern % 1 == 0:
                 self.log(f"Iter {itern + 1} / {self.config['max_iters']} in {end - start:.2f} s")
             self.save(optim)
+        end = time.time()
+        t_total = (end - start_time_run)
+        print(f'Time to process ' + str(self.config['max_iters']) + ' iterations: ' + str(int(t_total/60)) + ' minuts, on: ' + compute_hardware)
 
     def log(self, message: str, end: Optional[str] = None):
         log(message=message,
@@ -267,11 +286,12 @@ if __name__ == '__main__':
 
             boexp = BOExperiments(config_, args.cdr_constraints, seeds[t])
 
-            try:
-                boexp.run()
-            except FileNotFoundError as e:
-                print(e.args)
-                continue
+            # try:
+            #     boexp.run()
+            # except FileNotFoundError as e:
+            #     print(e.args)
+            #     continue
+            boexp.run()
 
             del boexp
             torch.cuda.empty_cache()
@@ -280,3 +300,6 @@ if __name__ == '__main__':
             t += 1
         args.resume_trial = 0
     print('BO finished')
+end = time.time()
+t_total = (end - start_time)
+print(f'Time to process ' + str(args.n_trials) + ' trails: ' + str(int(t_total/60)) + 'minuts, on:' + compute_hardware)

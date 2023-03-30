@@ -24,13 +24,9 @@ methods:
     label: Human Wet Lab Best Score
     line_color: yellow
 num_std: 1
-f_evals: 200
+f_evals: 500
 random_seeds:
 - 42
-- 43
-- 44
-- 45
-- 46
-results_dir: './results/transformed_overlap_batch_size_10'  # Put path where you fetch the results '/ABS/PATH/TO/results/'
+results_dir: './results/longOne'  # Put path where you fetch the results '/ABS/PATH/TO/results/'
 save_dir: './plots/'  # Put path where plots should be saved /ABS/PATH/TO/plots
 sequence_length: 11
