@@ -1,5 +1,5 @@
 # dtuBScProj
-Before runnign any code, go to x and install Absolut!
+Before runnign any code, go to https://github.com/csi-greifflab/Absolut and install Absolut!
 
 Then install all dependencies in requirements.txt
 Once absolut is set up and ready to go, do the following to run a trial
